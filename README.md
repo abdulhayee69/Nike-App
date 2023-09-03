@@ -1,8 +1,7 @@
-# React + Vite
+# NIKE Website using VITE and React | Fully Mobile Resposive
+![Image Description](https://ibb.co/K7YKwL6)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Summary
+This is a screenshot of my Nike shoe website. The website is built with React and Vite, and it features a truly mobile responsive experience. The website allows users to browse and purchase Nike shoes, and it provides detailed information about each shoe.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I am excited to continue working on this project and adding new features. I believe that this website has the potential to be a valuable resource for Nike shoe enthusiasts.

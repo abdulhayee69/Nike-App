@@ -1,37 +1,31 @@
-import { headerLogo } from "../assets/images";
-import { hamburger } from "../assets/icons";
-import { navLinks } from '../constants'
-const Nav = () => {
+const Button = ({
+  label,
+  iconURL,
+  backgroundColor,
+  textColor,
+  borderColor,
+  fullWidth,
+}) => {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
-      <nav className="flex justify-between items-center max-container">
-        <a href="/">
-          <img src={headerLogo} alt="Logo" width={130} height={29} />
-        </a>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-              {navLinks.map((item) => (
-                <li key={item.label}>
-                    <a
-                        href={item.href}
-                        className="font-montserrat leading-normal text-lg text-slate-grey"
-                    >
-                        {item.label}
-                    </a>
-                </li>
-              ))}       
-        </ul>
-        <div className="hidden max-lg:block">
-            <img 
-                src={hamburger}
-                alt="Hamburger"
-                width={25}
-                height={25}
+    <button
+      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
+      ${
+        backgroundColor
+          ? `${backgroundColor} ${textColor} ${borderColor}`
+          : "bg-coral-red text-white border-coral-red"
+      } rounded-full ${fullWidth && "w-full"}`}
+    >
+      {label}
 
-            />
-        </div>
-      </nav>
-    </header>
+      {iconURL && (
+        <img
+          src={iconURL}
+          alt='arrow right icon'
+          className='ml-2 rounded-full bg-white w-5 h-5'
+        />
+      )}
+    </button>
   );
 };
 
-export default Nav;
+export default Button;
